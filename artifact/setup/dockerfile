@@ -1,0 +1,13 @@
+from nvcr.io/nvidia/pytorch:22.02-py3
+
+COPY artifact/setup/requirements.txt /opt/app/requirements.txt
+
+WORKDIR /opt/app
+
+RUN pip install -r requirements.txt 
+
+# Packages that require runtime download can be cached by running the python -c "CODE"
+# Replace "CODE" with the lines that handle downloading
+# RUN python -c "CODE"
+
+WORKDIR /workspace
