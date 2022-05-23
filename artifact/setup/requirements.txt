@@ -1,4 +1,4 @@
 transformers
-tensorbordX
+tensorboardX
 bert_score
 pyrouge
