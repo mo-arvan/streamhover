@@ -1,2 +1,8 @@
 Behance.zip
 check.py
+data/
+__pycache__
+logs
+temp
+models
+results
